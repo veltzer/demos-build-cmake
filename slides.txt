@@ -1,0 +1,15 @@
+installing cmake:
+	on ubuntu:
+		install the package 'cmake' for the actual core command line tools.
+		install the package 'cmake-doc' for documentation.
+		install the package 'cmake-
+	on redhat/centos:
+		TBD
+
+which version?
+	current latest is 3.13
+	on ubuntu you get 3.12
+
+	Any version over 3.2 is recommended.
+
+
