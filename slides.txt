@@ -12,4 +12,19 @@ which version?
 
 	Any version over 3.2 is recommended.
 
-
+keeping things tidy
+	using a new command that you write
+		using the source control system
+			git clean
+			also add everything that is generated to .gitignore
+		You can do similar things with other source control systems.
+	using a new command to remove things which are
+		generated without the source control system.
+	using out of tree build.
+		mkdir build
+		cd build
+		cmake ..
+		all stuff is now in the 'build' folder.
+		remove it and you clean everything.
+	adding the cmake generated files to ADDITIONAL_MAKE_CLEAN_FILES
+		This isn't the best way.
