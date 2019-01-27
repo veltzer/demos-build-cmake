@@ -8,9 +8,9 @@ cmake_minimum_required(VERSION 3.12)
 # to be different do we?
 # That's why we use the 'set_target_properties' feature.
 
-# this line adds a static library
+# this line adds a static library, any number of sources can be listed here
 add_library(HelloDynamic hello.cc)
 set_target_properties(HelloDynamic PROPERTIES OUTPUT_NAME "hello")
-# this line adds a shared library
+# this line adds a shared library, any number of sources can be listed here
 add_library(HelloStatic SHARED hello.cc)
 set_target_properties(HelloStatic PROPERTIES OUTPUT_NAME "hello")
