@@ -52,7 +52,7 @@ Mkfile.old
 dkms.conf
 
 # Cmake stuff
-Makefile
-CMakeCache.txt
-CMakeFiles
-cmake_install.cmake
+*/Makefile
+*/CMakeCache.txt
+*/CMakeFiles
+*/cmake_install.cmake
