@@ -1,5 +1,5 @@
 # Add executable called "mybin" that is built from the source file "mybin.cc"
-add_executable (mybin mybin)
+add_executable (mybin mybin.cc)
 
 # Link the executable to the mylib library. Since the mylib has
 # public include directories we will use those link directories when building

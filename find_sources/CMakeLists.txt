@@ -1,5 +1,5 @@
 # you get a warning without this line
-cmake_minimum_required(VERSION 3.12)
+cmake_minimum_required(VERSION 3.10)
 
 # run the file function and it's sub function GLOB which
 # scans, non recursivly a folder or list of folder.
