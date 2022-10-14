@@ -1,4 +1,4 @@
 packages=[
-    'cmake',
-    'cmake-doc',
+    "cmake",
+    "cmake-doc",
 ]
