@@ -12,5 +12,6 @@
 - add compile flag -o3 -Werror to all code.
 - add compile flag -Wuninitialized to l2
 - add compile flag -Wconversion-null to l3 and all who depend on it.
-- git clone git@github.com:veltzer/demos-cmake.git
+
+References:
 - git clone https://github.com/veltzer/demos-cmake.git
