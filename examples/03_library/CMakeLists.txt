@@ -11,8 +11,8 @@ project("hello")
 # That's why we use the 'set_target_properties' feature.
 
 # this line adds a static library, any number of sources can be listed here
-add_library("HelloDynamic" "hello.cc")
-set_target_properties(HelloDynamic PROPERTIES OUTPUT_NAME "hello")
+add_library("HelloDynamic" SHARED hello.cc)
+add_library("HelloStatic" STATIC hello.cc)
+set_target_properties("HelloDynamic" PROPERTIES OUTPUT_NAME "hello")
+set_target_properties("HelloStatic" PROPERTIES OUTPUT_NAME "hello")
 # this line adds a shared library, any number of sources can be listed here
-add_library(HelloStatic SHARED hello.cc)
-set_target_properties(HelloStatic PROPERTIES OUTPUT_NAME "hello")
