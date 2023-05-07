@@ -1,5 +1,3 @@
-- add example of how to see all commands that make issues when it
-	is run.
 - add example of how to pass parameters to make
 	like -j 22
 - add example of how to seperated source folder from build folder.
