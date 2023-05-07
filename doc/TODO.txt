@@ -1,3 +1,7 @@
+- add example of how to see all commands that make issues when it
+	is run.
+- add example of how to pass parameters to make
+	like -j 22
 - add example of how to seperated source folder from build folder.
 	cmake -B flag
 - demonstrate other backend generators except make (which is the default).
@@ -8,3 +12,4 @@
 - demonstrate how manipulate lists in cmake using the 'list' command.
 - demonstrate how to add options to cmake using the 'OPTION' command.
 - demonstrate how to add dependencies to targets.
+- demonstrate how to add source to target after they have already been defined.
