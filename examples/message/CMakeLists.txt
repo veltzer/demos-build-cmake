@@ -1,1 +1,2 @@
-message(STATUS "Hello, World!")
+project("message")
+message(STATUS "Hello From CMake!")
