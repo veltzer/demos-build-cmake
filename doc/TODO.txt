@@ -3,4 +3,8 @@
 - demonstrate other backend generators except make (which is the default).
 	cmake --help
 	shows you the list of available generators on your platform and in your installation.
-- demonstace the install capabilities of cmake using the 'install' command
+- demonstrate the install capabilities of cmake using the 'install' command
+- demonstrate if statments and boolean values in cmake
+- demonstrate how manipulate lists in cmake using the 'list' command.
+- demonstrate how to add options to cmake using the 'OPTION' command.
+- demonstrate how to add dependencies to targets.
