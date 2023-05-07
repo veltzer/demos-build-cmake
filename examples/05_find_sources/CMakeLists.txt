@@ -1,4 +1,4 @@
-# you get a warning without this line
+project("find_sources")
 cmake_minimum_required(VERSION "3.10")
 
 # run the file function and it's sub function GLOB which
@@ -10,4 +10,4 @@ file(GLOB source_list "*.cc")
 message("the list is ${source_list}")
 
 # this line adds a binary, any number of sources can be listed here
-add_executable(hello ${source_list})
+add_executable("hello.elf" ${source_list})
