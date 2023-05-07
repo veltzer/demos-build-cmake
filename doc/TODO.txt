@@ -3,3 +3,4 @@
 - demonstrate other backend generators except make (which is the default).
 	cmake --help
 	shows you the list of available generators on your platform and in your installation.
+- demonstace the install capabilities of cmake using the 'install' command
