@@ -1,7 +1,7 @@
-#include <stdlib.h> // for EXIT_SUCCESS
+#include <cstdio>
+#include <cstdlib>
 
 int main(int argc, char** argv, char** envp) {
-	while(1) {
-	}
+	printf("Hello, World!\n");
 	return EXIT_SUCCESS;
 }
