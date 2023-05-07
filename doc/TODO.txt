@@ -13,3 +13,4 @@
 - demonstrate how to add options to cmake using the 'OPTION' command.
 - demonstrate how to add dependencies to targets.
 - demonstrate how to add source to target after they have already been defined.
+- do example of what happens with circular dependencies.
