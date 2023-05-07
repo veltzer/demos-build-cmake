@@ -1,0 +1,5 @@
+- add example of how to seperated source folder from build folder.
+	cmake -B flag
+- demonstrate other backend generators except make (which is the default).
+	cmake --help
+	shows you the list of available generators on your platform and in your installation.
