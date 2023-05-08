@@ -1,3 +1,6 @@
+- do example of how to build in a different folder.
+	dedicate a full example for this.
+	I already have such an example in wrong_order.
 - add example of how to pass parameters to make
 	like -j 22
 - add example of how to seperated source folder from build folder.
