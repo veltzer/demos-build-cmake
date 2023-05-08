@@ -1,11 +1,5 @@
-- do example of how to build in a different folder.
-	dedicate a full example for this.
-	I already have such an example in wrong_order.
-	https://stackoverflow.com/questions/18826789/cmake-how-to-set-the-build-directory-to-be-different-than-source-directory
 - add example of how to pass parameters to make
 	like -j 22
-- add example of how to seperated source folder from build folder.
-	cmake -B flag
 - demonstrate other backend generators except make (which is the default).
 	cmake --help
 	shows you the list of available generators on your platform and in your installation.
