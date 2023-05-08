@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION "3.10")
+cmake_minimum_required(VERSION "3.25.1")
 project("wrong_order")
 # Recurse into the "mybin" and "mylib" subdirectories.
 # We state the folders at the wrong order ON PURPOSE.

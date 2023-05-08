@@ -1,7 +1,5 @@
-# you get a warning without this line
-cmake_minimum_required(VERSION 3.12)
-# you get a warning without this too
-project("hello")
+cmake_minimum_required(VERSION "3.25.1")
+project("library")
 
 # You cannot call two targets with the same name since then how could
 # you refer to each of them later on in the CMakeLists.txt file?
@@ -13,6 +11,6 @@ project("hello")
 # this line adds a static library, any number of sources can be listed here
 add_library("HelloDynamic" SHARED hello.cc)
 add_library("HelloStatic" STATIC hello.cc)
+# both libraries should be called "hello"
 set_target_properties("HelloDynamic" PROPERTIES OUTPUT_NAME "hello")
 set_target_properties("HelloStatic" PROPERTIES OUTPUT_NAME "hello")
-# this line adds a shared library, any number of sources can be listed here

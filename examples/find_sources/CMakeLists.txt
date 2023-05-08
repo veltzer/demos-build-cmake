@@ -1,5 +1,5 @@
+cmake_minimum_required(VERSION "3.25.1")
 project("find_sources")
-cmake_minimum_required(VERSION "3.10")
 
 # run the file function and it's sub function GLOB which
 # scans, non recursivly a folder or list of folder.
