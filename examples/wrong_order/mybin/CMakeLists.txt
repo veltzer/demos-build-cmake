@@ -1,7 +1,5 @@
 # Add executable called "mybin" that is built from the source file "mybin.cc"
-add_executable("mybin" "mybin")
-
-# Link the executable to the mylib library. Since the mylib has
-# public include directories we will use those link directories when building
-# mybin
-target_link_libraries("mybin" LINK_PUBLIC mylibfoo)
+add_executable("mybin" "mybin.cc")
+# Link the executable to the mylib library.
+target_link_libraries("mybin" "mylib")
+target_include_directories(mybin PUBLIC "../mylib")
