@@ -1,3 +1,6 @@
+# putting this include statement at the end of the CMakeLists.txt file does not work
+include(../../include/all_include.cmake)
+
 # Create a library called "mylib" which includes the source file "mylib.cc".
 # The extension is already found. Any number of sources could be listed here.
 add_library("mylib" SHARED mylib.cc)
