@@ -1,3 +1,5 @@
+# you get a warning without this line
+cmake_minimum_required(VERSION "3.25.1")
 # putting this include statement at the end of the CMakeLists.txt file does not work
 include(../../include/all_include.cmake)
 
@@ -7,4 +9,3 @@ project("wrong_order")
 # This is to show that CMake has no issues with that.
 add_subdirectory("mylib")
 add_subdirectory("mybin")
-
