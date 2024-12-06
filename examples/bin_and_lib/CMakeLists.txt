@@ -3,7 +3,9 @@ cmake_minimum_required(VERSION "3.25.1")
 # putting this include statement at the end of the CMakeLists.txt file does not work
 include(../../include/all_include.cmake)
 
-project("wrong_order")
+get_filename_component(CURRENT_FOLDER_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+project(${CURRENT_FOLDER_NAME}) # This is a comment in CMake
+
 # Recurse into the "mybin" and "mylib" subdirectories.
 # We state the folders at the wrong order ON PURPOSE.
 # This is to show that CMake has no issues with that.
