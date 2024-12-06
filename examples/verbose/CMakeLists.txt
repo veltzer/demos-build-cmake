@@ -10,4 +10,4 @@ project(${CURRENT_FOLDER_NAME}) # This is a comment in CMake
 if(NOT CMAKE_BUILD_TYPE)
   set(CMAKE_BUILD_TYPE Release)
 endif()
-add_executable("hello.elf" "hello.cc")
+add_executable("verbose.elf" "hello.cc")

@@ -8,4 +8,4 @@ get_filename_component(CURRENT_FOLDER_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 project(${CURRENT_FOLDER_NAME}) # This is a comment in CMake
 
 # this line adds a binary, any number of sources can be listed here
-add_executable("hello.elf" "hello.cc")
+add_executable("diff.elf" "diff.cc")

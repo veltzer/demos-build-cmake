@@ -16,4 +16,4 @@ file(GLOB source_list "*.cc")
 message("the list is ${source_list}")
 
 # this line adds a binary, any number of sources can be listed here
-add_executable("hello.elf" ${source_list})
+add_executable("find_sources.elf" ${source_list})
