@@ -14,7 +14,7 @@ DO_CMAKE:=1
 ALL:=
 ALL_CC:=$(shell find examples -type f -and -name "*.cc")
 ifeq ($(DO_CMAKE),1)
-ALL+=examples/build
+ALL+=out/cmake.stamp
 endif # DO_CMAKE
 
 # silent stuff
@@ -41,9 +41,11 @@ clean:
 clean_hard:
 	$(Q)git clean -qffxd
 
-examples/build: $(ALL_SRC)
+out/cmake.stamp: $(ALL_SRC)
+	$(info doing [$@])
 	$(Q)cd examples;cmake -B $@
 	$(Q)cd examples;cmake --build $@
+	$(Q)pymakehelper touch_mkdir $@
 
 .PHONY: debug
 debug:
