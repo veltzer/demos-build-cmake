@@ -1,0 +1,3 @@
+/home/mark/git/veltzer/demos-build-cmake/examples/bin_and_lib/mybin/CMakeFiles/mybin.dir
+/home/mark/git/veltzer/demos-build-cmake/examples/bin_and_lib/mybin/CMakeFiles/edit_cache.dir
+/home/mark/git/veltzer/demos-build-cmake/examples/bin_and_lib/mybin/CMakeFiles/rebuild_cache.dir
