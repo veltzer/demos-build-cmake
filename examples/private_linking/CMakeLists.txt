@@ -13,9 +13,9 @@ add_library("helloz" SHARED helloz.cc)
 # target_link_libraries("helloz" PRIVATE "z")
 
 # second way
-# find_package(ZLIB 1.2.11 REQUIRED)
-# target_link_libraries("helloz" PRIVATE ZLIB::ZLIB)
+find_package(ZLIB 1.2.11 REQUIRED)
+target_link_libraries("helloz" PRIVATE ZLIB::ZLIB)
 
-# third way
-find_library(ZLIB_STATIC libz.a REQUIRED)
-target_link_libraries("helloz" PRIVATE ${ZLIB_STATIC})
+# third way (doenst work)
+# find_library(ZLIB_STATIC libz.a REQUIRED)
+# target_link_libraries("helloz" PRIVATE ${ZLIB_STATIC})
