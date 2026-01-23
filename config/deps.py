@@ -7,4 +7,6 @@ packages=[
     "cmake-doc",
     "cmake-curses-gui",
     "cmake-qt-gui",
+    # for various demos
+    "libgtk-3-dev",
 ]
