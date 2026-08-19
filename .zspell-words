@@ -1,0 +1,5 @@
+CMake
+Wconversion
+Werror
+Wuninitialized
+executables
