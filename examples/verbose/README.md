@@ -1,3 +1,5 @@
+# Verbose
+
 This is an example of how to see a more verbose output from the cmake
 build process.
 

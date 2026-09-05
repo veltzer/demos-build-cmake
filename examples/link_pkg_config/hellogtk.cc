@@ -27,6 +27,7 @@
  * EXTRA_COMPILE_FLAGS=-Wno-deprecated-declarations
  */
 
+// cppcheck-suppress constParameterCallback ; GCallback signature
 static void on_destroy(GtkWidget *widget, gpointer data) {
 	gtk_main_quit();
 }
