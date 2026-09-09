@@ -23,7 +23,6 @@ src_dirs = [".github/workflows"]
 
 # ─── c / c++ ─────────────────────────────────────────────────────────────────
 
-# not linted: examples/bin_and_lib/mybin/CMakeFiles (committed cmake build output)
 [processor.cppcheck]
 src_dirs = ["examples"]
 args = [
