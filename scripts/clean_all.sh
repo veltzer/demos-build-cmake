@@ -1,7 +1,7 @@
 #!/bin/bash -e
 for x in *
 do
-	if [ ! -d "${x}" ]
+	if [[ ! -d "${x}" ]]
 	then
 		continue
 	fi
