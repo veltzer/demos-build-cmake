@@ -36,11 +36,49 @@ args = ["--offline", "--no-progress", "--persona=pedantic"]
 
 # ─── c / c++ ─────────────────────────────────────────────────────────────────
 
-[processor.checker.cppcheck]
+# Demos whose whole program lives in one directory: one run per directory.
+[processor.checker.cppcheck.single_dir]
+dep_inputs = ["cppcheck.cfg"]
+batch_by_dir = true
 src_dirs = ["examples"]
+src_exclude_dirs = ["bin_and_lib", "large_project", "wrong_order"]
 args = [
 	"--error-exitcode=1",
-	"--enable=warning,style,performance,portability",
+	"--enable=warning,style,performance,portability,information,unusedFunction",
+	"--check-level=exhaustive",
+	"--inline-suppr",
+	"--library=cppcheck.cfg",
+]
+
+# bin_and_lib is one program split over mybin/ and mylib/ (add_subdirectory in its CMakeLists.txt): one run over the whole project.
+[processor.checker.cppcheck.bin_and_lib]
+batch = true
+src_dirs = ["examples/bin_and_lib"]
+args = [
+	"--error-exitcode=1",
+	"--enable=warning,style,performance,portability,information,unusedFunction",
+	"--check-level=exhaustive",
+	"--inline-suppr",
+]
+
+# large_project is one program split over mybin/ and mylib/ (add_subdirectory in its CMakeLists.txt): one run over the whole project.
+[processor.checker.cppcheck.large_project]
+batch = true
+src_dirs = ["examples/large_project"]
+args = [
+	"--error-exitcode=1",
+	"--enable=warning,style,performance,portability,information,unusedFunction",
+	"--check-level=exhaustive",
+	"--inline-suppr",
+]
+
+# wrong_order is one program split over mybin/ and mylib/ (add_subdirectory in its CMakeLists.txt): one run over the whole project.
+[processor.checker.cppcheck.wrong_order]
+batch = true
+src_dirs = ["examples/wrong_order"]
+args = [
+	"--error-exitcode=1",
+	"--enable=warning,style,performance,portability,information,unusedFunction",
 	"--check-level=exhaustive",
 	"--inline-suppr",
 ]
